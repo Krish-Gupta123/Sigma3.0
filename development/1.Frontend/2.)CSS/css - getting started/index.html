@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS PART 1.....Cascading Style Sheet</title>
+    
+    <!-- here h3 is known as SELECTOR -->
+     <!-- using style tag -->
+    <style>
+        
+        h3{
+            color : red;
+            background-color: aqua;
+        }
+    </style>
+
+
+    <br>
+    <!-- using External Stylesheet method to link css -->
+     <link rel = "stylesheet" href="ExternalStylesheet.css">
+     
+</head>
+<body>
+    <hr><hr>
+    <p>agar koi bhi website ko bina css ke dekhna hai toh uss website ko inspect karke usmai se head wala part delete kar do 
+    </p>
+    <hr><hr>
+    <h1>  THERE ARE 3 WAYS TO INCLUDE CSS </h1>
+    <ol>
+        <li>Inline css</li>
+        <li>Using style tag</li> ... used in head
+        <li>External Stylesheet</li>...most practical way to use
+    </ol>
+
+    <hr><hr>
+<!-- inline css -->
+  <b>I<h1> INLINE CSS</h1></b>
+    <h1 style ="color: red">Apna College</h1>
+    
+    <h1 style ="color: red">Kg king</h1>
+    
+    <h1 style ="color: red">Jai shree ram</h1>
+    <p style = "color: rgb(40, 40, 180)">Using inline css </p>
+<button style = "color: blue; background-color :rgba(236, 86, 16, 0.774)">Help</button>
+<p>inline css ek bohot basic way hai css include karneka lekin isse large scale projects mai use nhi karsakte jaise samjo agar hame hamare project mai sab heading ko ek he color dena hai toh sab mai alag alag declare karna pageda css</p>
+<hr><hr>
+
+<!-- Using style tag ....used in head tag-->
+<h1><b>Using style tag</b></h1>
+css is done in head tag
+
+<h3>Apna College</h3>
+    <h3>Kg king</h3>
+    <h3>Jai shree ram</h3>
+
+    <p>style tag mai ek problem yeh hai ke jab hum koi bade website banate jaise amazon facebook toh usmai multiple webpages hote hai toh hume multiple files banana padta hai jisse hame multiple times style tag ko likhna padhta har file mai</p>
+
+<hr><hr>
+
+<h1><b>Using External Stylesheet</b></h1>
+<p>writing css in seperate document and linking it in html file</p>
+
+<h2>Apna College</h2>
+<h2>Kg king</h2>
+<h2>Jai shree ram</h2>
+
+<p>it is the mosts practical way to implement css</p>
+<img src = "css.png" alt = "error exist">
+<p>Note: agar css wali external file same folder mai banaya hai toh href ke baad uske naam likh dene ka aur agar alag folder mai banayi hai toh pura file path dalna href ke baad naam ke badle mai</p>
+<hr><hr>
+
+
+
+<hr><hr>
+
+
+
+<hr><hr>
+
+
+<hr><hr>
+
+</body>
+</html>
