@@ -1,0 +1,21 @@
+h1{
+    /* adding foreground color */
+    color : blue;
+    /* adding background color */
+    background-color: red;
+}
+
+p{
+    /* adding foreground color */
+    color : red;
+    /* adding background color */
+    background-color: aqua;
+}
+button
+{
+    /* adding foreground color */
+    color:rgb(252, 64, 7);
+    /* adding background color */
+     background: black;
+    /*background color ke badle yaha background bhi likh sakte lekin background bohot properties mai use hota jaise image wagere aur bhi jagah use hota toh background color he likhenge toh jyada preferable hoga */
+}
