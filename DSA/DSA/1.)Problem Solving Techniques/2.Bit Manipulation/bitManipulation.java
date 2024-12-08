@@ -48,13 +48,63 @@
 
 // import java.util.*;
 
-// public class bitManipulation{
-// public static void main(String[] args) {
+// public class bitManipulation {
+//     public static int getIthBit(int n, int i) {
+//         int bitmask = 1 << i;
+//         if ((n & bitmask) == 0) {
+//             return 0;
+//         } else {
+//             return 1;
+//         }
+//     }
 
-// }
+//     public static void main(String[] args) {
+//         System.out.println(getIthBit(10, 2));
+//         System.out.println(getIthBit(10, 3));
+//     }
 // }
 
 // 2.)Set th bit
+
+// import java.util.*;
+
+// public class bitManipulation {
+//     public static int setIthBit(int n, int i) {
+//         int bitmask = 1 << i;
+//         return (n | bitmask);
+//     }
+
+//     public static void main(String[] args) {
+//         System.out.println(setIthBit(10, 2));
+//     }
+// }
+
+// 3.)Clear ith bit
+
+// import java.util.*;
+
+// public class bitManipulation {
+//     public static int clearIthBit(int n, int i) {
+//         int bitmask = ~(1 << i);
+//         return n & bitmask;
+//     }
+
+//     public static void main(String[] args) {
+//         System.out.println(clearIthBit(10, 1));
+//     }
+// }
+
+//update ith bit
+
+import java.util.*;
+
+public class bitManipulation {
+    public static void main(String[] args) {
+
+    }
+}
+
+// clear last i bits
 
 // import java.util.*;
 
@@ -64,8 +114,47 @@
 // }
 // }
 
-// 3.)Clear ith bit
+// clear range of bits
 
+// import java.util.*;
+
+// public class bitManipulation{
+// public static void main(String[] args) {
+
+// }
+// }
+
+// check if a number is a power of 2 or not
+
+// import java.util.*;
+
+// public class bitManipulation{
+// public static void main(String[] args) {
+
+// }
+// }
+
+// count set bit in a number.............(GOOGLE,AMAZON)
+
+// import java.util.*;
+
+// public class bitManipulation{
+// public static void main(String[] args) {
+
+// }
+// }
+
+// Fast exponentiation
+
+// import java.util.*;
+
+// public class bitManipulation{
+// public static void main(String[] args) {
+
+// }
+// }
+
+//
 // import java.util.*;
 
 // public class bitManipulation{
