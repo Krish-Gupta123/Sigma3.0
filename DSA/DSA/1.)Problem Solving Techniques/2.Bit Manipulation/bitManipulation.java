@@ -96,69 +96,153 @@
 
 //update ith bit
 
-import java.util.*;
+//method 1
+// import java.util.*;
 
-public class bitManipulation {
-    public static void main(String[] args) {
+// public class bitManipulation {
+//     public static int clearIthBit(int n, int i) {
+//         int bitmask = ~(1 << i);
+//         return n & bitmask;
+//     }
 
-    }
-}
+//     public static int setIthBit(int n, int i) {
+//         int bitmask = 1 << i;
+//         return n | bitmask;
+//     }
+
+//     public static int updateIthBit(int n, int i, int newBit) {
+//         if (newBit == 0) {
+//             return clearIthBit(n, i);
+//         } else {
+//             return setIthBit(n, i);
+//         }
+//     }
+
+//     public static void main(String[] args) {
+//         System.out.println(updateIthBit(10, 4, 1));
+//         System.out.println(updateIthBit(10, 2, 1));
+
+//     }
+// }
+
+// method 2
+
+// import java.util.*;
+
+// public class bitManipulation {
+// public static int clearIthBit(int n, int i) {
+// int bitmask = ~(1 << i);
+// return n & bitmask;
+// }
+
+// public static int updateIthBit(int n, int i, int newBit) {
+// clearIthBit(n, i);
+// int bitmask = newBit << i;
+// return n | bitmask;
+// }
+
+// public static void main(String[] args) {
+// System.out.println(updateIthBit(10, 4, 1));
+// System.out.println(updateIthBit(10, 2, 1));
+
+// }
+// }
 
 // clear last i bits
 
 // import java.util.*;
 
-// public class bitManipulation{
-// public static void main(String[] args) {
+// public class bitManipulation {
+//     public static int clearLastIthBit(int n, int i) {
+//         int bitmask = (~0) << i;
+//         return n & bitmask;
+//     }
 
-// }
+//     public static void main(String[] args) {
+//         System.out.println(clearLastIthBit(5, 2));
+//     }
 // }
 
 // clear range of bits
 
 // import java.util.*;
 
-// public class bitManipulation{
-// public static void main(String[] args) {
+// public class bitManipulation {
+//     public static int clearRangeOfBits(int n, int i, int j) {
+//         int a = (~0) << (j + 1);
+//         int b = (1 << i) - 1;
 
-// }
+//         int bitmask = a | b;
+//         return n & bitmask;
+//     }
+
+//     public static void main(String[] args) {
+//         System.out.println(clearRangeOfBits(10, 2, 4));
+//     }
 // }
 
 // check if a number is a power of 2 or not
 
 // import java.util.*;
 
-// public class bitManipulation{
-// public static void main(String[] args) {
+// public class bitManipulation {
+//     public static boolean isPowerOfTwo(int n) {
+//         return (n & (n - 1)) == 0;
+//     }
 
-// }
+//     public static void main(String[] args) {
+//         System.out.println(isPowerOfTwo(8));
+//         System.out.println(isPowerOfTwo(15));
+
+//     }
 // }
 
 // count set bit in a number.............(GOOGLE,AMAZON)
 
 // import java.util.*;
 
-// public class bitManipulation{
-// public static void main(String[] args) {
+// public class bitManipulation {
+//     public static int countSetBits(int n) {
+//         int count = 0;
+//         while (n > 0) {// checking LSB
+//             if ((n & 1) != 0) {
+//                 count++;
+//             }
+//             n = n >> 1;
+//         }
+//         return count;
+//     }
 
-// }
+//     public static void main(String[] args) {
+//         System.out.println(countSetBits(16));
+//         System.out.println(countSetBits(10));
+//         System.out.println(countSetBits(15));
+
+//     }
 // }
 
 // Fast exponentiation
 
-// import java.util.*;
+import java.util.*;
 
-// public class bitManipulation{
-// public static void main(String[] args) {
+public class bitManipulation {
 
-// }
-// }
+    public static int fastExponentiation(int a, int n)// eg .... if 5^2 then a= 5,n= 2
+    {
+        int ans = 1;
+        while (n > 0) {
+            if ((n & 1) != 0) {
+                ans = ans * a;
+            }
+            a = a * a;
+            n = n >> 1;
+        }
+        return ans;
+    }
 
-//
-// import java.util.*;
+    public static void main(String[] args) {
+        System.out.println(fastExponentiation(5, 3));
+        System.out.println(fastExponentiation(3, 5));
 
-// public class bitManipulation{
-// public static void main(String[] args) {
-
-// }
-// }
+    }
+}
