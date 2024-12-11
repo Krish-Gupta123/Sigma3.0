@@ -1,0 +1,16 @@
+p
+{
+    font-family:League spartan;
+    color: #ffa511;
+    text-align: center;
+    font-size : 55px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    /* text-decoration: teal double underline; */
+    /* color exact nhi lag rha tha meko isliye thoda light kar diya */
+    text-decoration: rgb(32, 230, 230) double underline;
+    text-transform: uppercase;
+
+
+}

@@ -1,0 +1,49 @@
+/* topics covered in this file */
+
+/* ....text align properties
+....font weight and text declaration
+....line height and letter spacing
+....units in css(pixels)
+....font family */
+
+
+h1{
+    /* text-align:right;
+    border: solid; */
+    /* width: 50%; */
+    text-align:center;
+    text-decoration:wavy red underline;
+    letter-spacing: 3px ;
+    font-size:50px;
+    font-family:avant garde,didot,sans-serif;
+}
+h3{
+    text-align:start;
+    text-decoration: dotted pink line-through;
+}
+p{
+    text-align : justify;
+    font-weight:400;
+    line-height: 2.5;
+font-size:15px;
+
+}
+h2{
+    /* font-weight: normal; */
+    /* normal ke jagah 400 bhi likh sakte */
+    font-weight: 800;
+    text-decoration:  double blue overline;
+    font-family:impact;
+}
+
+
+a{
+    /* text decoration basically anchor tag ke neeche jo underline hoti hai by default usse remove karne ke liye kaam aata hai */
+    text-decoration:none;
+}
+img{
+    border: solid;
+}
+b{
+    font-size: 25px;
+}
