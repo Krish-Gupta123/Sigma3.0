@@ -1,0 +1,54 @@
+/* NOTE: drive wale solutions mai unhine thoda alag way se kiya hoga kahi kahi matlab ek ek selector pe text align apply kiya aise sab par apna sahi hai pura unhone question 5 bhi universal selector se nhi kiya ek ek mai apply kiya property par apna sahi hai */
+
+/* question 1 solved in html file */
+
+
+/* question 2 and 9*/
+p{
+    color:#a52a2a;
+    line-height : 30px;
+}
+
+/* question 3 */
+h1,h3,h4,p{
+    text-align: center;
+}
+
+/* question 4  */
+/* ismai question mai bolna cha rahe ke poem ke name ko red karo */
+h1{
+    color:red
+}
+h3{
+    color:black;
+}
+
+/* question 5 */
+*{
+    font-family: Georgia;
+}
+
+/* qustion 6 */
+a{
+    color:rgb(0,255,0);
+    text-decoration: none;
+}
+
+/* qustion 7 */
+button{
+    background-color: white;
+    color: blueviolet;
+}
+
+/* qustion 8 */
+textarea{
+    color: #000000;
+}
+
+
+
+/* qustion 10 */
+
+span{
+    text-decoration: underline;
+}
