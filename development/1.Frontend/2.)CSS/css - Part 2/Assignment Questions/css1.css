@@ -1,0 +1,82 @@
+/* 1.) */
+#mainTopic{
+    color: blue;
+}
+
+/* 2.) */
+*{
+    text-align: center;
+}
+
+/* 3.) */
+h1,h3,h5{
+    font-family: "Georgia";
+}
+
+/* 4.) */
+.para{
+    color: white;
+    background-color: cornflowerblue;
+}
+
+/* 5.) */
+/* div>button{
+    color: azure;
+    background-color: purple;
+} */
+
+/* or */
+
+div button{
+    color:azure;
+    background-color: purple;
+}
+
+/* 6.) */
+button:hover{
+    background-color: yellow;
+    color:blue
+}
+
+/* 7.) */
+.para:nth-of-type(2n+1){
+    color:yellow;
+}
+
+/* or */
+
+/* .para:nth-of-type(odd){
+    color:yellow;
+} */
+
+/* 8.) */
+h1::first-letter{
+color: red;
+}
+
+/* 9.) */
+
+#yes:checked + label{
+    color : darkgreen
+}
+
+/* or */
+
+/* input[type="checkbox"]:checked + label{
+    color:darkgreen;
+} */
+
+/* 10.) */
+/* Qs10. Order these rules according to their specificity, from least specific to most
+specific. :
+- h1
+- #mainContent
+- .main
+- div .main */
+/* (drive mai order reverse hai apna sahi hai) */
+
+/* SOLUTION : 
+h1
+.main
+div .main
+#mainContent  */

@@ -1,0 +1,210 @@
+/* Notes in this file */
+
+
+/* Elemental selectors kya hota hai woh part 1 mai dekha tha hamne */
+
+/* now we will see universal selector : *(astriek) */
+
+
+/* UNIVERSAL SELECTORS */
+*{
+    font-family: 'Courier New';
+}
+
+/* ELEMENTAL SELECTORS */
+h1,h3{
+    color:rgb(199, 25, 25);
+}
+
+
+/* ID SELECTOR */
+
+/* mainly used in forms
+input --> id = "myId"
+label --> for = "myID" */
+
+#login{
+ background-color: white;
+ color: black   
+}
+
+#signup
+{
+    background-color: rgb(228, 37, 37);
+    color: white;
+}
+
+
+/* CLASS SELECTOR */
+.upvote
+{
+    background-color: green;
+    color : aliceblue
+}
+
+
+/* DESCENDENT SELECTOR */
+
+/* p a{
+    color : purple;
+    background-color: yellow;
+} */
+
+.post a{
+    color: purple;
+    background-color: yellow;
+}
+
+nav ul li a{
+    color: hotpink;
+}
+
+/* nav a{
+    color: hotpink;
+} */
+
+
+/* Adjacent Sibling Combinator */
+p+h3{
+    text-decoration: underline;
+}
+
+.upvote + button{
+    background-color: cornflowerblue;
+    color: darkblue;
+}
+
+/* Child Combinator */
+
+/* NOTE : ONLY APPLIED ON DIRECT CHILDRENS OF PARENT CHILDERENS NOT ON GRANDCHILRENS*/
+/* Eg : <p> 
+<h1> </h1> 
+<h3> </h3>
+<div>
+<u>
+</u>
+</div> 
+</p> */
+
+/* valid : p>h1, p>h3
+:invalid: p>u */
+
+
+
+div>input{
+    background-color: darksalmon;
+}
+
+
+/* Attribute Selector */
+
+input[type="text"]
+{
+    color : green;
+}
+
+input[type = "password"]
+{
+    color:red;
+}
+
+input[type]
+{
+    background-color: ghostwhite;
+}
+
+/* Pseudo Class */
+/* 
+
+:hover - hover matlab cursor kisse line ya button pe leke jana.
+
+:active - active matlab kisse bhi button ya line pe single click ya double click karna.
+
+:checked - checked basically checkbox aur radio button ke liye use hota hai....for eg : jaise he koi radio button ko select kiya ya koi checkbox ko tick kiya tab kya hoga.
+
+:nth-of-type - nth-of-type mai basically koi bhi nth element ya tag ya button pe alag koi css apply karna hai toh
+
+*/
+
+button:hover{
+    color:white;
+    background-color: black;
+}
+/* note : hover property is applied on all buttons except login and signup button becoz of css specificity(login aur sign up ka css id selector se set kiya hai isliye uska preference highesh rehega)*/
+
+/* h3:hover{
+    text-decoration: overline;
+} */
+
+
+button:active{
+    background-color: hotpink;
+    color: black;
+}
+/* note : active property is applied on all buttons except login and signup button becoz of css specificity(login aur sign up ka css id selector se set kiya hai isliye uska preference highesh rehega)*/
+
+
+p:active{
+    font-weight: bold;
+    color: green;
+}
+
+input[type= "radio" ]:checked + label{
+    color:red;
+    font-weight: bold;
+}
+
+div:nth-of-type(2n)
+{
+    background-color: blanchedalmond;
+}
+
+
+/* Pseudo Elements */
+/* 
+::first-letter 
+::first-line 
+::selection - selection mai basically koi bhi text copy paste karte waqt jab select karte hai tab koi css apply karna hai selected text pe toh isse use karte hai
+ */
+
+
+ h1::first-letter{
+    color:black;
+    
+ }
+
+ p::first-line{
+    color: blue;
+ }
+
+ p::selection{
+    background-color: #b8f70cee;
+ }
+
+ /* CSS: Cascading StyleSheets */
+
+ /* NOTE : css mai agar kisse same element ko with same specificity agar 2 baar styling diya hai toh jo second time mai sabse neeche likha hai usse jyada priority denge */
+
+ h3{
+    background-color: yellow;
+ }
+
+ h3{
+    background-color: blue;
+ }
+/* color blue hota agar style1.1.css ko include nhi karte toh */
+
+ /* NOTE : css mai agar kisse same element ko with same specificity agar 2 baar styling diya hai alag alag css file mai toh jo second time mai css file include kiya hai usse jyada pririty d usse jyada priority denge */
+
+
+
+ /* !important in css */
+
+
+ /* h3{
+    background-color: turquoise !important;
+  }*/
+  
+  
+ /*
+  ek baar kisse css ke aage important likh diya toh uska priority sabse jyada ho jata hai inline css id selector se bhi jyada usse koi nhi hila sakta phir */

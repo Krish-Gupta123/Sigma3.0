@@ -1,0 +1,26 @@
+/* UNIVERSAL SELECTOR */
+*{
+    font-family: "Courier New";
+}
+
+/* ELEMENTAL SELECTOR */
+h1{
+    color: #1b74e4
+}
+
+/* ID SELECTOR */
+#searchbtn
+{
+    background-color: black;
+    color: white;
+}
+
+/* #login,#register{
+    background-color: aqua;
+} */
+
+/* CLASS SELECTOR */
+
+ .userbtn{
+    background-color: aqua;
+} 

@@ -1,0 +1,13 @@
+/* descendant selector */
+
+/* #myId p{
+    color: green;
+} */
+
+/* or */
+
+/* Attribute selector */
+
+div[id = "myId"] p{
+    color: green;
+}

@@ -1,0 +1,21 @@
+div {
+    background-color: yellow;
+}
+
+/* form{
+    background-color: red;
+} */
+
+/* AGAR BUTTONS AUR INPUTS SE INHERIT KARANA HAI TOH ALAG SE CSS MAI INHERIT KARKE LIKHDO PROPERTY NAME KE SATH WOH KARDEGA INHERIT */
+button{
+    background-color: inherit;
+}
+
+input{
+    background-color: inherit;
+}
+
+button:hover{
+    background-color: red;
+}
+

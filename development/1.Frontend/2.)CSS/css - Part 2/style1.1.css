@@ -1,0 +1,5 @@
+/* 
+NOTE : css mai agar kisse same element ko with same specificity agar 2 baar styling diya hai alag alag css file mai toh jo second time mai css file include kiya hai usse jyada pririty d usse jyada priority denge */
+h3{
+    background-color: green;
+}
