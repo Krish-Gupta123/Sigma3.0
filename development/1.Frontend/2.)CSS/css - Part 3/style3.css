@@ -1,0 +1,16 @@
+/* NOTE : AGAR DIPLAY KO INLINE KARENGE TOH BOHOT SI CSS KE PROPERTIES APPLY NHI HOGI ISLIYE DISPLAY KO INLINE-BLOCK KARENGE USKA MATLAB HOTA HAI KE SAB DIV EK LINE MAI HE AAENGE i.e.  SPACE INLINE ELEMENTS KE TARAH APPLY KARENGE LEKIN SAB CSS PROPERTIES APPLY HOGI JO BLOCK ELEMENTS MAI HOTI HAI */
+
+div{
+    height: 200px;
+    width: 200px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    margin: 5px;
+    display: inline-block;
+}
+
+/* 
+NOTE : Display ko none kardete hai toh woh specific content hide ho jata hai website se , bade bade website wale content website pe dalke rakhte hai aur display ko none karke content hide kardete hai phir jab public ko dikhana ho tab visible karte hai */
+#third{
+    display: none;
+}

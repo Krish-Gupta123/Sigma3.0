@@ -1,0 +1,39 @@
+/* ************************************************* */
+
+/* h2{
+    display: inline;
+    background-color: pink;
+}
+
+span{
+    display: block;
+    background-color: yellowgreen;
+} */
+
+
+/* basic part above */
+
+/* ************************************************* */
+
+
+/* Note: 
+1.) inline elements like span donot accept width and height css properties
+2.) inline elements like span jo hote hai usmai margin horizontally he work karta hai vertically kabhi nhi apply hota */
+span{
+    /* background-color: lime; */
+    border: 2px solid black;
+    height: 100px;
+    width: 200px;
+    padding: 50px;
+    margin: 20px;
+}
+
+
+/* NOTE : div mai sab properties barabar se apply hui */
+div{
+     border: 2px solid black;
+    height: 100px;
+    width: 200px;
+    padding: 50px;
+    margin: 20px;
+}
