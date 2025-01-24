@@ -1,0 +1,39 @@
+/* Note : mam ne yehi smiley face wala emoji position absolute rakhke solve kiya tha maine bina sol deke code kiya tha isliye mera methoda alag hai mam ka alag hai par mera bhi output sahi he hai lekin absolute rakhna he jyada preferable hai chaiye toh mam ka code drive se refer karlo par mera bhi sahi hai basically khali measurements count karna aana chaiye paper pe ya mind mai position ke according absolute ya relative .......calculations are imp*/
+
+.face{
+    height: 400px;
+    width: 400px;
+    background-color: rgb(255, 145, 0);
+    border-radius: 50%;
+}
+
+.eye{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border-radius: 50% ;
+    
+}
+
+#leftEye{
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+
+#rightEye{
+    position: relative;
+    top: 50px;
+    left: 250px;
+}
+
+#lips{
+    height: 75px;
+    width: 200px;
+    background-color: brown;
+    position: relative;
+    top:150px;
+    left: 100px;
+    border-radius: 0px 0px 50px 50px;
+}

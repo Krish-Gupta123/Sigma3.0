@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Part 5</title>
+    <link rel="Stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Flexbox Playground</h1>
+    <div id="container">
+    <div style="background-color: violet;">violet</div>        
+        <div style="background-color: indigo;">indigo</div>
+        <div id="blue" style="background-color: blue; height:75px">blue</div>
+        <div style="background-color: green;">green</div>
+        <div style="background-color: yellow;">yellow</div>
+        <div id = "org" style="background-color: orange; height:200px;font-size : 4em">orange</div>
+    <div style="background-color: red;">red</div>        
+    </div>
+    
+
+    <hr>
+    <hr>
+    <hr>
+    <b>Note : agar flexbox ka direction = row then horizontal axis is main axis and vertical axis is cross axis and if flexbox direction = column then vertical axis is main axis and horizontal axis is cross axis</b>
+
+
+    <br>
+<br>
+    <B>Note : justify-content mai agar space between kiya toh 1st aur last wala box touch rehega border ko baaki sab mai equal space aa jaegi ....agar space around kiya toh 1st aur last box ke border ke bich mai half space aaegi jitna baaki sab boxes ke bich mai hai uske comparision mai ..... aur agar pace evenly kiya toh har ek box ke bich mai equal space aaegi including 1st and last boxes ke border ke bich mai bhi</B>
+
+    <br>
+    <br>
+
+    <b>Note : flex-wrap mai wrap-reverse jo property hai woh cross axis ke basis pe reverse karta hai</b>
+
+    <br>
+    <br>
+
+    <b>
+        Note: align-item: baseline matlab koi bhi box kitna bhi bada ya chota hai uske andar ka text ka size kuch bhi ho lekin text ek he line mai aa jata hai i.e ek baseline mai he aa jata hai text
+    </b>
+
+    <br><br>
+
+    <b>NOTE : Justify wali sari properties main axis ke along kaam karti hai aur align wali sab properties cros axis ke along kaam karti hai</b>
+
+
+    <br><br>
+
+    <b> NOTE : 
+    align item aur align content dono items ko cross axis ke according he align karte hai lekin align item .......items ke beech mai cross axis ke direction mai items ke beech mai space chodta hai agar space extra hai toh aur align content .......items ke beech mai cross axis ke direction mai item ke beech mai bhi space nhi chodta aur align content cross axis mai items ke beech ke space control kar sakta hai lekin align items space control nhi kar sakta </b>
+
+    <br><br>
+
+    <b>NOTE : align-content mai baseline property nhi hoti bas align items mai hoti hai baseline property
+        The align-content: baseline; property is not valid in CSS. While align-content works with values like flex-start, center, space-between, space-around, space-evenly,  etc., the baseline value is not supported for align-content.</b>
+
+    <br><br>
+
+    <b>NOTE : align items is for groups and align self is for individual and align self has more priority than align item</b>
+
+    <br><br>
+    <b>flex basis works along main axis</b>
+
+    <br><br>
+
+<b>NOTE : flex shrink aur flex grow property jo hai woh font size ke wajah se kabhi kabhi apply nhi hoti agar koi content likh wa hai toh</b>
+
+
+<br><br>
+
+<img src="/images/theory1.JPG" alt="error exist">
+<br>
+<img src="/images/theory2.JPG" alt="error exist">
+
+</body>
+</html>

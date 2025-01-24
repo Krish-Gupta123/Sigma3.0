@@ -1,0 +1,54 @@
+/* sab codes pehle khud se likhe hai par almost 95 percent same he hai apna bhi sahi hai yehi refer karlo */
+
+
+
+/* question 1 */
+.outer{
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid rgb(20, 178, 226);
+    justify-content: space-evenly;
+    align-content: space-around;
+    border-radius: 15px;
+}
+
+.inner{
+    height: 100px;
+    width: 100px;
+    font-size: 50px;
+    background-color: grey;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+
+/* question 2 */
+
+/* jo jo comment kiya hai woh drive mai likha tha lekin yeh add karo ya nhi koi effect nhi ho rha mujhe toh extra laga isliye comment kar diya */
+
+
+#container{
+    height: 50px;
+    width: 900px;
+    background-color: pink;
+    display: flex;
+    border: 2px solid rgb(0, 204, 255);
+    border-radius: 10px ;
+    /* align-content: center;
+    justify-content: flex-start; */
+}
+
+.items{
+    height: 50px;
+    width: 80px;
+    font-size: 24px;
+    margin-left: 5px;
+    line-height: 50px;
+
+    /* border-radius: 10px; */
+}

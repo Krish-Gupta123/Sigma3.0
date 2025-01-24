@@ -1,0 +1,60 @@
+#container{
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+
+    /* row by default if not mentioned */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* flex-wrap: wrap; */
+
+    /* baseline jitna bhi text ke form mai content hota hai usko same line mai likhta hai */
+    /* align-items : baseline; */
+
+    /* align-content mai baseline property nhi hoti bas align items mai hoti hai baseline property
+    The align-content: baseline; property is not valid in CSS. While align-content works with values like flex-start, center, space-between, space-around, space-evenly,  etc., the baseline value is not supported for align-content. */
+
+    align-content: flex-start;
+    
+    /* Note : align-content keliye orange wale container ke height 100px kardo practice ke waqt phir wapas 200px kar dena baaki sab properties ke liye*/
+
+}
+
+h1{
+    text-align: center;
+}
+
+#container div{
+    height:100px;
+    /* width: 300px; */
+    
+    /* flex grow propertyke liye width ko 50px set kiya hai */
+    width: 50px;
+
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#org{
+    align-self: flex-start;
+
+    /* font size wali property hatao inline css se uske wajah se flex basis work nhi karega */
+    /* flex-basis: 50px; */
+
+    /* flex-grow: 1; */
+
+    /* flex-shrink: 1; */
+
+    flex: 2 2 100px;
+}
+
+#blue{
+    /* flex-basis: 400px; */
+    flex-grow: 2;
+    /* min-width: 400px; */
+    /* flex-shrink: 2; */
+}

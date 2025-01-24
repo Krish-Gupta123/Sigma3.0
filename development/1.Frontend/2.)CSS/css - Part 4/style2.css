@@ -1,0 +1,80 @@
+section{
+    margin-top: 100px;
+}
+
+div{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background-color: #76a864;
+    border: 2px solid black;
+    margin: 10px auto;
+}
+
+div:nth-of-type(2n){
+    background-color: #f7db68;
+}
+
+div:nth-of-type(3n){
+    background-color: #ebb02d;
+}
+
+/* transform:rotate() */
+#one{
+    /* transform:rotate(-45deg); */
+    /* transform:rotate(60deg); */
+    /* transform:rotate(-60deg); */
+    transform:rotate(45deg)
+
+}
+
+/* transform:scale() */
+#two{
+    /* transform:scale(2,1) ; */
+    /* transform:scale(0.5,2) */
+    transform:scale(0.5);
+}
+
+/* transform:translate() */
+#three{
+    /* transform:translate(100px,100px) */
+    /* transform:translateX(100px); */
+    transform:translateX(-100px);
+}
+
+/* transform:skew */
+#four{
+    /* transform:skew(-30deg); */
+    /* transform:skew(90deg); */
+    transform: skew(30deg);
+}
+
+#five{
+    transform: rotate(30deg) translateX(150px);
+}
+
+
+
+/* Box Shadow */
+#boxShadow{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background-color: #76a864;
+    border: 2px solid black;
+    margin: 10px auto;
+    box-shadow: 2px 2px 10px black;
+}
+
+
+
+/* Background Image */
+#BackgroundImg{
+    width: 400px;
+    height: 200px;
+    background-color: #76a864;
+    margin: 10px auto;
+    background-image: url(/images/backgroundImg.jpg);
+    background-size: contain;
+    color: black;
+}

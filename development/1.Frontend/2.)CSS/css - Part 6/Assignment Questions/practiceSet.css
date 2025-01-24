@@ -1,0 +1,92 @@
+/* question 1 */
+
+.container{
+    margin: 0;
+    padding: 0;
+    /* In CSS, 100vh is a unit of measurement representing 100% of the viewport height. It is commonly used to make elements span the full height of the browser window, regardless of the content inside.
+ */
+
+    height: 100vh;
+display: grid;
+grid-template-columns: repeat(12,1fr);
+grid-template-rows: repeat(12,1fr);
+grid-gap: 10px;
+}
+
+.container div{
+    background-color: pink;
+    font-size: 1.5rem;
+}
+
+.header{
+grid-column: 1/span 12;
+}
+
+.sidebar{
+    grid-row-start: 2;
+    grid-row-end: 12;
+
+    grid-column: 1/span 3;
+}
+
+.navigation{
+
+    grid-column: 4/span 6;
+}
+
+.ads{
+
+    grid-row: 2/span 10;
+    grid-column: 10/13;
+}
+
+.main{
+ grid-row: 3/span 9;
+ grid-column: 4/10;
+}
+
+.footer{
+ /* grid-column: 1/13; */
+ /* or */
+ grid-column: 1/span 12;
+}
+
+
+/* question 2 */
+
+@media (max-width : 720px)
+{
+    .header{
+        grid-column: 1/span 12;
+        }
+        
+        .sidebar{
+            grid-row-start: 3;
+            grid-row-end: 12;
+        
+            grid-column: 1/span 3;
+        }
+        
+        .navigation{
+        
+            grid-column: 1/span 12;
+            grid-row : 2/3;
+        }
+        
+        .ads{
+        
+            grid-row-start: 12;
+            grid-row-end: 13;
+            grid-column: 1/span 3;
+        }
+        
+        .main{
+         grid-row: 3/span 9;
+         grid-column: 4/span 9;
+        }
+        
+        .footer{
+         
+         grid-column: 4/13;
+        }   
+}

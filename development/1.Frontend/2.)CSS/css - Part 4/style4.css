@@ -1,0 +1,70 @@
+/* Problem : hum koi bhi box ke andar agar koi position nhi dete specifically aur kuch type karte hai toh box neeche khisakjata hai  */
+
+/* Solution : humne display inline block rakha hai jiske wajah se yeh ho rha hai inline-block rakhne se box mai baseline align hota hai, isliye andar ka text ki wajah se vertical space add hoti hai, aur box thoda neeche shift hota hai.
+When you use inline-block, the box aligns with this baseline by default. If there's no text inside, it still reserves space for potential text, causing a gap or slight misalignment.
+
+To fix this:
+
+Use vertical-align: top; to align the box to the top instead of the baseline. */
+
+
+
+
+div{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    display: inline-block;
+    border: 3px solid black;
+    text-align: center;
+    margin: 20px;
+    
+    /* vertical align baseline wale problem ko resolve karne ke liye likha hai */
+    vertical-align: top;
+    
+}
+
+
+/* static mai kuch bhi likho top ,left kuch bhi div wala box apne default jagah pe rehta hai  */
+#static{
+    background-color: yellow;
+    position: static;
+    top: 100px;
+    left: 100px;
+}
+
+
+/* jo div ka box actual jagah pe hai samjo uske center pe top se aur left se 100px push kardiya usse  */
+/* note jo div ke box ka actual space tha woh reserved rehega hamesha agar naya div banaya toh woh uss space ke baad he banega uske upar nhi banega */
+#relative{
+    background-color: yellow;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+
+
+
+/* website ke main pg ke left top corner se position measure hoti hai */
+/* ismai relative jaise space reserve nhi hoti agar naya div banaya toh woh usse jagah pe banega jaha pehle wala div tha jiska position relative kiya */
+#absolute{
+    background-color: yellow;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+
+}
+
+/* website ke main pg ke left top corner se position measure hoti hai lekin ismai pg pe fix ho jata hai div kitna bhi scroll karo woh pg pe ek fixed position pe reh jata hai*/
+/* ismai relative jaise space reserve nhi hoti agar naya div banaya toh woh usse jagah pe banega jaha pehle wala div tha jiska position fixed kiya */
+#fixed{
+    background-color: yellow;
+     position: fixed; 
+     top: 100px; 
+    left: 100px;
+}
+
+
+
+/* Note : sticky kar ke bhi hota hai par usse use karne ke kuch conditions hai mdn ke documentation se padh lena abhi nhi samja aur woh itna imp nhi hai fixed ke jaise he kaam karta hai bas jab scroll down karte hai toh sticky sticky jaise chip chipa sa scrol ho ta hai ru ruk ke */
