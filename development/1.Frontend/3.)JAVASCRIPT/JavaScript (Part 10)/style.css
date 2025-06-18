@@ -1,0 +1,22 @@
+/* Activity */
+
+.Activity{
+    text-align:center;
+
+}
+
+#abc{
+    height: 100px;
+    width:500px;
+    border:1px solid black;
+    margin:auto;
+}
+
+/* Event Listeners for elements */
+
+#myId{
+    height:100px;
+    width:100px;
+    background-color:pink;
+    border:1px solid black;
+}
