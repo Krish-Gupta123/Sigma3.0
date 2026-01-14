@@ -209,6 +209,7 @@ public class binaryTreesP2 {
     }
 
     public static void topview(Node root) {
+        // level order
         Queue<Info> q = new LinkedList<>();
         HashMap<Integer, Node> map = new HashMap<>();
 
